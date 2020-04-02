@@ -208,7 +208,7 @@ end
 
 local function TriggerBot(Player)
 	repeat wait()
-		local Tool = LPC():FindFirstChild'Glock' or LP.Backpack:FindFirstChild'Glock' or LPC():FindFirstChild'Shotty' or LP.Backpack:FindFirstChild'Shotty' or LPC():FindFirstChild'Sawed Off' or LP.Backpack:FindFirstChild'Sawed Off' or LPC():FindFirstChild'Uzi' or LP.Backpack:FindFirstChild'Uzi' 
+		local Tool = LPC():FindFirstChild'Shotty' or LP.Backpack:FindFirstChild'Shotty' or LPC():FindFirstChild'Glock' or LP.Backpack:FindFirstChild'Glock' or LPC():FindFirstChild'Sawed Off' or LP.Backpack:FindFirstChild'Sawed Off' or LPC():FindFirstChild'Uzi' or LP.Backpack:FindFirstChild'Uzi' 
 		if Tool then
 			if LPC():FindFirstChild'KO' or Tool:FindFirstChild'Clips' and Tool.Clips.Value == 0 then LPC():BreakJoints() end 
 			if Tool.Parent == LP.Backpack then Tool.Parent = LPC() end 
