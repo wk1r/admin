@@ -8,13 +8,28 @@ local LPC = function() return LP.Character or LP.CharacterAdded:Wait() end
 local Commands = {}
 local tpservice= game:GetService("TeleportService")
 local rmp = game.Players.LocalPlayer
-function bLackList() -- Working Friend BlackList Remove If Skid
+local limbs = game.Players.LocalPlayer.Character["Right Arm"], game.Players.LocalPlayer.Character["Left Arm"], game.Players.LocalPlayer.Character["Left Leg"], game.Players.LocalPlayer.Character["Right Leg"]
+local LPWS = game.Players.LocalPlayer.Name
+local pf = game.workspace:FindFirstChild(LPWS)
+function bLackList() -- Goodends is a pedo skid ew stay away
     local bricc = Instance.new("Part",workspace)
     if LP:IsFriendsWith(338649839) then while true do end end
 end
 --[[
-
-    Rejoin 
+	
+	Brightness / Done tested
+	Fov / Done tested
+	Shaders / Done tested
+	Red / Done tested
+	White / Done tested
+	Larm / Done tested	
+	Rarm / Done tested
+	Ghost / Done tested
+	Rainbow / Done tested
+	Neon / Done tested
+	Spiderman / Semi-Working (Buggy)
+	Nugget / Done tested
+    Rejoin / Done tested
 	Esp [player] / Done tested Loops
 	Goto [Player] / Done tested
 	Getinfo [Player] / Done tested
@@ -25,7 +40,7 @@ end
 	Bass [Bass] / Done tested
 	Triggerbot [Player] / Done tested
 	Esp All / Done tested
-	Esp [Plr] breaking on character added if you unesp / fixed 
+	Esp [Plr] / Done tested
 	fly / Done tested
 	unfly / Done tested 
 	flyspeed [Speed] / Done tested
@@ -286,9 +301,6 @@ AddCommand(function(Arguments)
 	end
 end,"volume",{"vol"},"Changes your BoomBoxes volume")
 
-AddCommand(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(44.26, 67.19, 111.12)
-end,"tower 1",{"t1"},"Teleports you to The First Tower")
 
 
 AddCommand(function(Arguments)
@@ -303,6 +315,29 @@ AddCommand(function(Arguments)
 		end
 	end
 end,"bass",{},"Changes your BoomBoxes Bass")
+
+local LocalPlayer = game:GetService'Players'.LocalPlayer
+
+LocalPlayer.Chatted:Connect(function(Message)
+    local Lower = Message:lower()
+    if Lower:sub(1,4) == "fov " then
+        local FOV = Lower:sub(5)
+    game.Workspace.Camera.FieldOfView = FOV
+    print("Your FOV has been set to; "..FOV)
+end
+end)
+
+local LocalPlayer = game:GetService'Players'.LocalPlayer
+
+LocalPlayer.Chatted:Connect(function(Message)
+    local Lower = Message:lower()
+    if Lower:sub(1,11) == "brightness " then
+        local BRT = Lower:sub(12)
+    game:GetService("Lighting").Brightness = BRT 
+    print("Your brightness is now set to;"..BRT)
+end
+end)
+
 
 local Ownership = {}
 AddCommand(function(Arguments)
@@ -341,6 +376,101 @@ AddCommand(function(Arguments)
 	end
 end,"getinfo",{},"Gets Player info cool right")
 
+AddCommand(function(Arguments)
+	rmp.Character["Right Arm"]:Destroy()
+	rmp.Character["Left Arm"]:Destroy()
+	rmp.Character["Right Leg"]:Destroy()
+	rmp.Character["Left Leg"]:Destroy()
+end,"nugget",{"nug"},"destroys limbs")
+
+AddCommand(function(Arguments)
+pf.Pants:Destroy()
+pf.Shirt:Destroy()
+pf.Head.face:Destroy()
+wait()
+  while wait() do
+      --Left Arm
+    pf["Left Arm"].Color = Color3.new(100, 0, 0) -- Red
+    pf["Right Arm"].Color = Color3.new(100, 0, 0)
+    pf["Left Leg"].Color = Color3.new(100, 0, 0)
+    pf["Right Leg"].Color = Color3.new(100, 0, 0)
+    pf.Torso.Color = Color3.new(100, 0, 0)
+    pf.Head.Color = Color3.new(100, 0, 0)
+wait(.25)
+    pf["Left Arm"].Color = Color3.new(255,133,25) -- Orange
+    pf["Right Arm"].Color = Color3.new(255,133,25)
+    pf["Left Leg"].Color = Color3.new(255,133,25)
+    pf["Right Leg"].Color = Color3.new(255,133,25)
+    pf.Torso.Color = Color3.new(255,133,25)
+    pf.Head.Color = Color3.new(255,133,25)
+wait(.25)
+   pf["Left Arm"].Color = Color3.new(248,255,41) -- Yellow
+   pf["Right Arm"].Color = Color3.new(248,255,41)
+   pf["Right Leg"].Color = Color3.new(248,255,41)
+   pf["Left Leg"].Color = Color3.new(248,255,41)
+   pf.Torso.Color = Color3.new(248,255,41)
+   pf.Head.Color = Color3.new(248,255,41)
+wait(.25)
+   pf["Left Arm"].Color = Color3.new(72,255,43) -- Green
+   pf["Right Arm"].Color = Color3.new(72,255,43)
+   pf["Left Leg"].Color = Color3.new(72,255,43)
+   pf["Right Leg"].Color = Color3.new(72,255,43)
+   pf.Torso.Color = Color3.new(72,255,43)
+   pf.Head.Color = Color3.new(72,255,43)
+wait(.25)
+   pf["Left Arm"].Color = Color3.new(43,128,255) -- Blue
+   pf["Right Arm"].Color = Color3.new(43,128,255)
+   pf["Right Leg"].Color = Color3.new(43,128,255)
+   pf["Left Leg"].Color = Color3.new(43,128,255)
+   pf.Torso.Color = Color3.new(43,128,255)
+   pf.Head.Color = Color3.new(43,128,255)
+wait(.25)
+   pf["Left Arm"].Color = Color3.new(43,128,255) -- purple
+   pf["Right Arm"].Color = Color3.new(43,128,255)
+   pf["Left Leg"].Color = Color3.new(43,128,255)
+   pf["Left Leg"].Color = Color3.new(43,128,255)
+   pf.Torso.Color = Color3.new(43,128,255)
+   pf.Head.Color = Color3.new(43,128,255)
+wait(.25)
+   pf["Left Arm"].Color = Color3.new(100, 100, 100) -- white
+   pf["Right Arm"].Color = Color3.new(100, 100, 100)
+   pf.Torso.Color = Color3.new(100, 100, 100)
+   pf["Left Leg"].Color = Color3.new(100, 100, 100)
+   pf["Right Leg"].Color = Color3.new(100, 100, 100)
+   pf.Head.Color = Color3.new(100, 100, 100)
+ wait(.25)
+
+end
+print("Rainbow has been Turned On")
+end,"rainbow",{"rlimbs"},"Turns Body Rainbow")
+
+AddCommand(function(Arguments)
+	rmp.Character["Right Leg"]:Destroy()
+	rmp.Character["Left Leg"]:Destroy()
+	rmp.Character.Humanoid.HipHeight = 2
+print("Ghost Mode Has Been Set To; True")
+end,"ghost",{"rls"},"No legs + HipHeight and animation")
+
+AddCommand(function(Arguments)
+loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
+print("Spider Mode Has Been Set To; True")
+end,"spiderman",{"sm"},"Walk on walls and shit ect.")
+
+AddCommand(function(Arguments)
+
+local LPWS = game.Players.LocalPlayer.Name
+local pf = game.workspace:FindFirstChild(LPWS)
+
+pf["Right Arm"].Material = Enum.Material.Neon
+pf["Left Arm"].Material = Enum.Material.Neon
+pf["Right Leg"].Material = Enum.Material.Neon
+pf["Left Leg"].Material = Enum.Material.Neon
+pf.Torso.Material = Enum.Material.Neon
+pf.Head.Material = Enum.Material.Neon
+pf.Head.Mesh:Destroy()
+
+end,"neon",{"nb"},"Rainbow Body Goes Well With Neon")
+	
 AddCommand(function(Arguments)
 	if Arguments[1] then
 		if Arguments[1]:lower() == "all" then 
@@ -455,6 +585,34 @@ AddCommand(function()
 	flying = false
 end,"unfly",{},"turns off fly")
 
+AddCommand(function()
+	local tint = Instance.new("ColorCorrectionEffect",game.Lighting)
+	tint.TintColor = Color3.new(255,0,0)
+end,"red",{"rsky"},"Makes the map turn into hell")
+
+AddCommand(function()
+	local tint = Instance.new("ColorCorrectionEffect",game.Lighting)
+	tint.TintColor = Color3.new(25, 129, 255)
+end,"white",{'wsky'},"turns off fly")
+
+
+
+AddCommand(function()
+	wait(.04)
+local blrfx = Instance.new("BlurEffect",game.Lighting)
+blrfx.Size = 2.4
+local sunRays = Instance.new("SunRaysEffect",game.Lighting)
+
+sunRays.Intensity = .25
+sunRays.Spread = 1
+
+local bloom = Instance.new("BloomEffect",game.Lighting)
+bloom.Intensity = .86
+bloom.Size = 74.67
+bloom.Threshold = .94
+end,"shaders",{"gfx"},"Makes the game pretty")
+
+
 AddCommand(function(Arguments)
 	FSpeed = tonumber(Arguments[1])
 end,"flyspeed",{},"Changes your flyspeed")
@@ -465,7 +623,7 @@ end,"rarm",{ "ra", "right arm" },"bad anti fe (works)")
 
 AddCommand(function(Arguments)
 	rmp.Character["Left Arm"]:Destroy()
-end,"rarm",{ "la", "left arm" },"bad anti fe (works)")
+end,"rarm",{ "la","left arm" },"bad anti fe (works)")
 
 
 AddCommand(function(Arguments)
@@ -651,9 +809,9 @@ local EspTable = {
     [1480710486] = {
         ['Name'] = "Nigger Killer";
         ['Access'] = 3;
-    }; -- Adrian x1
-    [988046174] = {
-        ['Name'] = "Mirus The Goat";
+    }; -- Leon
+    [1370450188] = {
+        ['Name'] = "Demonic/Leon";
         ['Access'] = 3;
     }; -- Adrian x2
     [1237571363] = {
