@@ -6,9 +6,15 @@ local FSpeed,SprintSpeed,WalkSpeed = 10,25,16
 local KeyTable = {['W'] = false;['A'] = false;['S'] = false;['D'] = false;}
 local LPC = function() return LP.Character or LP.CharacterAdded:Wait() end
 local Commands = {}
-if LP:IsFriendsWith(338649839) then while true do end end
-
+local tpservice= game:GetService("TeleportService")
+local rmp = game.Players.LocalPlayer
+function bLackList() -- Working Friend BlackList Remove If Skid
+    local bricc = Instance.new("Part",workspace)
+    if LP:IsFriendsWith(338649839) then while true do end end
+end
 --[[
+
+    Rejoin 
 	Esp [player] / Done tested Loops
 	Goto [Player] / Done tested
 	Getinfo [Player] / Done tested
@@ -153,7 +159,6 @@ end
 local function notif(Title,Body,Length,Icon)
 	StarterGui:SetCore("SendNotification",{['Title'] = Title;['Text'] = Body;['Duration'] = Length;['Icon'] = Icon;})
 end
-
 local function PlrFinder(Plr)
 if not Plr then return end 
 local NewPlr,Player = Plr:lower(),Players:GetPlayers()
@@ -199,7 +204,7 @@ LP.CharacterAdded:Connect(function()
 		workspace.CurrentCamera.CameraSubject = LPC()
 	end
 end)
-
+  
 local function Teleport(Part)
 	local Play = TweenService:Create(LPC().HumanoidRootPart, TweenInfo.new(3.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),{CFrame = Part})
 	Play:play()
@@ -280,6 +285,11 @@ AddCommand(function(Arguments)
 		notif("Command: Volume","You need to set volume to a number!",5,nil)
 	end
 end,"volume",{"vol"},"Changes your BoomBoxes volume")
+
+AddCommand(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(44.26, 67.19, 111.12)
+end,"tower 1",{"t1"},"Teleports you to The First Tower")
+
 
 AddCommand(function(Arguments)
 	if Arguments[1] and tonumber(Arguments[1]) then 
@@ -450,6 +460,15 @@ AddCommand(function(Arguments)
 end,"flyspeed",{},"Changes your flyspeed")
 
 AddCommand(function(Arguments)
+	rmp.Character["Right Arm"]:Destroy()
+end,"rarm",{ "ra", "right arm" },"bad anti fe (works)")
+
+AddCommand(function(Arguments)
+	rmp.Character["Left Arm"]:Destroy()
+end,"rarm",{ "la", "left arm" },"bad anti fe (works)")
+
+
+AddCommand(function(Arguments)
 	SoundId = "rbxassetid://"..tonumber(Arguments[1])
 	updateSettings()
 	local Sound = Instance.new('Sound',workspace)
@@ -487,14 +506,20 @@ AddCommand(function(Arguments)
 end,"reset",{"re"},"resets your character")
 
 AddCommand(function(Arguments)
-	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Made By Slleepy, wk1r, and Cyrus" ,"All")
+	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Rampage Reconstructed [ BETA ]" ,"All")
 	wait(.05)
-	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Join the server: sx33Gdy" ,"All")
+	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Public Test Issue V:1.0.0.0" ,"All")
 end,"credits",{"creds","cred"},"Credits for the script")
 
 AddCommand(function()
     LP.Backpack:ClearAllChildren()
 end,"clearbackpack",{"clear"},"Clears your backpack of all tools")
+
+AddCommand(function()
+    wait()
+tpservice:Teleport(game.PlaceId, rmp)
+end,"rejoin",{""},"Rejoins the server")
+
 
 AddCommand(function(Arguments)
     if Arguments[1] then 
@@ -504,6 +529,7 @@ AddCommand(function(Arguments)
         end
     end
 end,"kill",{},"Kills said player")
+
 
 spawn(function()
 	while wait() do 
@@ -607,19 +633,19 @@ local EspTable = {
     Owner: 4 
 ]]
 	[1299915133] = {
-        ['Name'] = "Owner | wk1r";
+        ['Name'] = "Owner | Eric/wk1r";
         ['Access'] = 4;
      }; -- wk1r
 	[1499406578] = {
-        ['Name'] = "Owner | wk1r";
+        ['Name'] = "Owner | Eric/wk1r";
         ['Access'] = 4;
     };-- wk1r
 	[144756238] = {
-        ['Name'] = "Owner | Sleepy x Ice.";
+        ['Name'] = "Owner | Eric/wk1r";
         ['Access'] = 4;
     }; -- sleepy 
 	[164282612] = {
-        ['Name'] = "Owner | wk1r";
+        ['Name'] = "Owner | Eric/wk1r";
         ['Access'] = 4;
     }; -- wk1r
     [1480710486] = {
@@ -693,6 +719,7 @@ local EspTable = {
         ['Name'] = "Homo | KILL THEM";
         ['Access'] = 0;
     }; -- KASHLOVERZ
+}
 }
 
 local CommandList = {
