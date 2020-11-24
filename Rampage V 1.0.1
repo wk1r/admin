@@ -460,6 +460,8 @@ end,"ghost",{"rls"},"No legs + HipHeight and animation")
 
 AddCommand(function(Arguments)
 getgenv().mode = "Summer" 
+
+
 local a = game.Lighting
 a.Ambient = Color3.fromRGB(33, 33, 33)
 a.Brightness = 6.67
@@ -515,6 +517,17 @@ local s = Instance.new("SunRaysEffect", a)
 s.Enabled = true
 s.Intensity = 0.01
 s.Spread = 0.146
+local blrfx = Instance.new("BlurEffect",game.Lighting)
+blrfx.Size = 2.4
+local sunRays = Instance.new("SunRaysEffect",game.Lighting)
+
+sunRays.Intensity = .25
+sunRays.Spread = 1
+
+local bloom = Instance.new("BloomEffect",game.Lighting)
+bloom.Intensity = .86
+bloom.Size = 74.67
+bloom.Threshold = .94
 end,"raytracing",{"rtx"},"Best Possible GFX")
 
 
@@ -662,22 +675,6 @@ AddCommand(function()
 	tint.TintColor = Color3.new(25, 129, 255)
 end,"white",{'wsky'},"turns off fly")
 
-
-
-AddCommand(function()
-	wait(.04)
-local blrfx = Instance.new("BlurEffect",game.Lighting)
-blrfx.Size = 2.4
-local sunRays = Instance.new("SunRaysEffect",game.Lighting)
-
-sunRays.Intensity = .25
-sunRays.Spread = 1
-
-local bloom = Instance.new("BloomEffect",game.Lighting)
-bloom.Intensity = .86
-bloom.Size = 74.67
-bloom.Threshold = .94
-end,"shaders",{"gfx"},"Makes the game pretty")
 
 
 AddCommand(function(Arguments)
@@ -883,8 +880,8 @@ local EspTable = {
         ['Access'] = 3;
     }; -- Leon
     [1370450188] = {
-        ['Name'] = "Demonic/Leon";
-        ['Access'] = 3;
+        ['Name'] = "DEM6NIC";
+        ['Access'] = 4;
     }; -- Adrian x2
     [1237571363] = {
         ['Name'] = "Nigger Killer";
@@ -901,17 +898,6 @@ local EspTable = {
         ['Name'] = "Slave of Adriaxnn btw hes a simp";
         ['Access'] = 3;
     }; -- Adrians' Friend
-	[12978668] = {
-        ['Name'] = "Main Dev | !fishgang Cy | Cyrus' Streets admin creator";
-        ['Access'] = 4;
-    }; -- Me / Cy
-	[659119329] = {
-        ['Name'] = "Main Dev | !fishgang Cy | Cyrus' Streets admin creator";
-        ['Access'] = 4;
-    };-- Me / Cy
-    [102452845] = {
-        ['Name'] = "sleepy's girlfriend <3";
-        ['Access'] = 3;
     }; -- 2txs
 		[1435318503] = {
         ['Name'] = "Ice.";
@@ -950,7 +936,7 @@ local EspTable = {
         ['Access'] = 0;
     }; -- KASHLOVERZ
 }
-}
+
 
 local CommandList = {
 	run = {
