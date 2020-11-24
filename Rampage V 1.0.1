@@ -1,3 +1,8 @@
+
+if game.PlaceId == 4669040 then
+    else game:GetService("TeleportService"):Teleport(4669040, game.Players.LocalPlayer)
+end 
+local returnTime = tick()
 local Players,StarterGui,TweenService,ReplicatedStorage,RunService,UserInput,HttpService = game:GetService'Players',game:GetService'StarterGui',game:GetService'TweenService',game:GetService'ReplicatedStorage',game:GetService'RunService',game:GetService'UserInputService',game:GetService'HttpService'
 local LP = Players.LocalPlayer or Players.PlayerAdded:Wait()
 local VolumeToSet,LoopPlayer,BlinkSpeed;
@@ -996,3 +1001,4 @@ if game.PlaceId == 455366377 then
         end
     end)
 end 
+print(tick() - returnTime)
