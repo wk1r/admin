@@ -666,6 +666,11 @@ AddCommand(function()
 	Noclip = not Noclip
 end,"noclip",{"clip"},"Turns on/off noclip")
 
+AddCommand(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wk1r/admin/master/cmdgui"))()
+end,"cmds",{"cmd"},"Opens Cmd Gui")
+
+
 AddCommand(function(Arguments)
     LPC():BreakJoints()
 end,"reset",{"re"},"resets your character")
