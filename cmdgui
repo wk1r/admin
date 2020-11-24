@@ -1,0 +1,506 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local RoRoundImageLabel = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+local TextLabel_25 = Instance.new("TextLabel")
+local TextLabel_26 = Instance.new("TextLabel")
+local TextLabel_27 = Instance.new("TextLabel")
+local TextLabel_28 = Instance.new("TextLabel")
+local TextLabel_29 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+RoRoundImageLabel.Name = "RoRound ImageLabel"
+RoRoundImageLabel.Parent = ScreenGui
+RoRoundImageLabel.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+RoRoundImageLabel.BackgroundTransparency = 1.000
+RoRoundImageLabel.BorderSizePixel = 0
+RoRoundImageLabel.Position = UDim2.new(0.148854166, 0, 0.111827873, 0)
+RoRoundImageLabel.Size = UDim2.new(0.13333334, 0, 0.0466906168, 0)
+RoRoundImageLabel.Image = "rbxassetid://4688453652"
+RoRoundImageLabel.ImageColor3 = Color3.fromRGB(27, 27, 27)
+RoRoundImageLabel.ScaleType = Enum.ScaleType.Slice
+RoRoundImageLabel.SliceCenter = Rect.new(200, 200, 200, 200)
+RoRoundImageLabel.SliceScale = 0.001
+
+ScrollingFrame.Parent = RoRoundImageLabel
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.991554618, 0)
+ScrollingFrame.Size = UDim2.new(0, 256, 0, 100)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 19.8999996, 0)
+ScrollingFrame.ScrollBarThickness = 0
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 240, 0, 26)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "Brightness"
+TextLabel.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_2.Font = Enum.Font.Fantasy
+TextLabel_2.Text = "FOV"
+TextLabel_2.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_3.Font = Enum.Font.Fantasy
+TextLabel_3.Text = "Shaders"
+TextLabel_3.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_4.Font = Enum.Font.Fantasy
+TextLabel_4.Text = "Red"
+TextLabel_4.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = ScrollingFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_5.Font = Enum.Font.Fantasy
+TextLabel_5.Text = "White"
+TextLabel_5.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = ScrollingFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_6.Font = Enum.Font.Fantasy
+TextLabel_6.Text = "Larm "
+TextLabel_6.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = ScrollingFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_7.Font = Enum.Font.Fantasy
+TextLabel_7.Text = "Rarm"
+TextLabel_7.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = ScrollingFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_8.Font = Enum.Font.Fantasy
+TextLabel_8.Text = "Ghost "
+TextLabel_8.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = ScrollingFrame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_9.Font = Enum.Font.Fantasy
+TextLabel_9.Text = "Rainbow "
+TextLabel_9.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = ScrollingFrame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_10.Font = Enum.Font.Fantasy
+TextLabel_10.Text = "Neon "
+TextLabel_10.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = ScrollingFrame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_11.Font = Enum.Font.Fantasy
+TextLabel_11.Text = "Spiderman "
+TextLabel_11.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = ScrollingFrame
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_12.Font = Enum.Font.Fantasy
+TextLabel_12.Text = "Nugget "
+TextLabel_12.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = ScrollingFrame
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_13.Font = Enum.Font.Fantasy
+TextLabel_13.Text = "Rejoin "
+TextLabel_13.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = ScrollingFrame
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_14.Font = Enum.Font.Fantasy
+TextLabel_14.Text = "    Esp [player] "
+TextLabel_14.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = ScrollingFrame
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_15.Font = Enum.Font.Fantasy
+TextLabel_15.Text = "    Goto [Player]"
+TextLabel_15.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = ScrollingFrame
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_16.Font = Enum.Font.Fantasy
+TextLabel_16.Text = " Getinfo [Player]"
+TextLabel_16.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = ScrollingFrame
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_17.Font = Enum.Font.Fantasy
+TextLabel_17.Text = "Chatspy "
+TextLabel_17.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+TextLabel_18.Parent = ScrollingFrame
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_18.Font = Enum.Font.Fantasy
+TextLabel_18.Text = "Feloop [Player]"
+TextLabel_18.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = ScrollingFrame
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_19.Font = Enum.Font.Fantasy
+TextLabel_19.Text = "  Owner [Player]"
+TextLabel_19.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+TextLabel_20.Parent = ScrollingFrame
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_20.Font = Enum.Font.Fantasy
+TextLabel_20.Text = "    Volume [Volume]"
+TextLabel_20.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+TextLabel_21.Parent = ScrollingFrame
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_21.Font = Enum.Font.Fantasy
+TextLabel_21.Text = "    Bass [Bass]"
+TextLabel_21.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+TextLabel_22.Parent = ScrollingFrame
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(0, 0, 0.00694088219, 0)
+TextLabel_22.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_22.Font = Enum.Font.Fantasy
+TextLabel_22.Text = "  Triggerbot [Player]"
+TextLabel_22.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+TextLabel_23.Parent = ScrollingFrame
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_23.Font = Enum.Font.Fantasy
+TextLabel_23.Text = "Esp All"
+TextLabel_23.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+
+TextLabel_24.Parent = ScrollingFrame
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_24.Font = Enum.Font.Fantasy
+TextLabel_24.Text = "Esp [Plr]"
+TextLabel_24.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
+TextLabel_25.Parent = ScrollingFrame
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_25.Font = Enum.Font.Fantasy
+TextLabel_25.Text = "fly "
+TextLabel_25.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+TextLabel_26.Parent = ScrollingFrame
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_26.Font = Enum.Font.Fantasy
+TextLabel_26.Text = " unfly"
+TextLabel_26.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_26.TextScaled = true
+TextLabel_26.TextSize = 14.000
+TextLabel_26.TextWrapped = true
+
+TextLabel_27.Parent = ScrollingFrame
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_27.Font = Enum.Font.Fantasy
+TextLabel_27.Text = "    flyspeed [Speed]"
+TextLabel_27.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_27.TextScaled = true
+TextLabel_27.TextSize = 14.000
+TextLabel_27.TextWrapped = true
+
+TextLabel_28.Parent = ScrollingFrame
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.Size = UDim2.new(0, 240, 0, 26)
+TextLabel_28.Font = Enum.Font.Fantasy
+TextLabel_28.Text = "    guisoundid [SoundId]"
+TextLabel_28.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
+TextLabel_29.Parent = RoRoundImageLabel
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.Position = UDim2.new(0.295833349, 0, 0.0991554633, 0)
+TextLabel_29.Size = UDim2.new(0, 37, 0, 27)
+TextLabel_29.Font = Enum.Font.Fantasy
+TextLabel_29.Text = "RAMPAGE Cmd List."
+TextLabel_29.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextLabel_29.TextSize = 20.000
+
+TextButton.Parent = RoRoundImageLabel
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.76171875, 0, 0.198310927, 0)
+TextButton.Size = UDim2.new(0, 25, 0, 16)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.LineHeight = 2.000
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextButton.TextSize = 60.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = RoRoundImageLabel
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.90234375, 0, 0.198310927, 0)
+TextButton_2.Size = UDim2.new(0, 25, 0, 16)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "x"
+TextButton_2.TextColor3 = Color3.fromRGB(158, 2, 255)
+TextButton_2.TextSize = 30.000
+TextButton_2.TextWrapped = true
+
+-- Scripts:
+
+local function PHFBXPC_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local debounce = false
+	local button = script.Parent
+	
+	
+	local function toggle()
+		if debounce == true then
+	
+			debounce = false
+	
+			local TS = game:GetService("TweenService")
+			local properties = {
+				Rotation = 360
+			}
+			local tweeninf = TweenInfo.new(0.6,Enum.EasingStyle.Back,Enum.EasingDirection.Out)
+			local tween = TS:Create(script.Parent, tweeninf, properties)
+			tween:Play()
+	
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255,255,255)}):Play()
+	
+			pcall(function()
+	
+			end)
+	
+		elseif debounce == false then
+	
+			debounce = true
+	
+	
+			local TS = game:GetService("TweenService")
+			local properties = {
+				Rotation = 0
+			}
+			local tweeninf = TweenInfo.new(0.6,Enum.EasingStyle.Back,Enum.EasingDirection.Out)
+			local tween = TS:Create(script.Parent, tweeninf, properties)
+			tween:Play()
+	
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(158, 2, 255)}):Play()
+	
+			pcall(function()
+	
+			end)
+	
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(toggle)
+end
+coroutine.wrap(PHFBXPC_fake_script)()
+local function TSKPVY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local debounce = false
+	local button = script.Parent
+	--Out: {0, 256},{0, 100}
+	--In: {0, 256},{0, 00}
+	
+	local function toggle()
+		if debounce == true then
+	
+			debounce = false
+	
+			button.Parent.ScrollingFrame:TweenSize(UDim2.new(0, 256,0, 0), "Out", "Quad", 0.4, true)
+	
+			pcall(function()
+	
+			end)
+	
+		elseif debounce == false then
+	
+			debounce = true
+	
+			button.Parent.ScrollingFrame:TweenSize(UDim2.new(0, 256,0, 100), "Out", "Quad", 0.4, true)
+	
+			pcall(function()
+	
+			end)
+	
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(toggle)
+end
+coroutine.wrap(TSKPVY_fake_script)()
+local function SSEUTC_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent["RoRound ImageLabel"]:Destroy()
+		end)
+end
+coroutine.wrap(SSEUTC_fake_script)()
