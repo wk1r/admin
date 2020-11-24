@@ -61,7 +61,7 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0, 0, 0.991554618, 0)
 ScrollingFrame.Size = UDim2.new(0, 256, 0, 100)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 19.8999996, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 20, 0)
 ScrollingFrame.ScrollBarThickness = 0
 
 TextLabel.Parent = ScrollingFrame
