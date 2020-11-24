@@ -52,6 +52,8 @@ RoRoundImageLabel.ImageColor3 = Color3.fromRGB(27, 27, 27)
 RoRoundImageLabel.ScaleType = Enum.ScaleType.Slice
 RoRoundImageLabel.SliceCenter = Rect.new(200, 200, 200, 200)
 RoRoundImageLabel.SliceScale = 0.001
+RoRoundImageLabel.Draggable = true
+RoRoundImageLabel.Active = true
 
 ScrollingFrame.Parent = RoRoundImageLabel
 ScrollingFrame.Active = true
